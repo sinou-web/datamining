@@ -1,0 +1,86 @@
+\contentsline {chapter}{\numberline {1}Exploration des donn\IeC {\'e}es}{4}
+\contentsline {section}{\numberline {1.1}La biblioth\IeC {\`e}que WEKA [1]}{4}
+\contentsline {section}{\numberline {1.2}Affichage d'un DataSet}{4}
+\contentsline {section}{\numberline {1.3}Remplacer les valeurs manquantes}{5}
+\contentsline {subsection}{\numberline {1.3.1}but}{5}
+\contentsline {subsection}{\numberline {1.3.2}M\IeC {\'e}thode : enti\IeC {\`e}rement impl\IeC {\'e}menter (Orient\IeC {\'e} classe)}{5}
+\contentsline {subsection}{\numberline {1.3.3}R\IeC {\'e}sultat}{7}
+\contentsline {section}{\numberline {1.4}Discr\IeC {\'e}tisation}{9}
+\contentsline {subsection}{\numberline {1.4.1}But[2]}{9}
+\contentsline {subsection}{\numberline {1.4.2}M\IeC {\'e}thode}{9}
+\contentsline {subsubsection}{Choix du nombre d'intervalles}{9}
+\contentsline {subsubsection}{Cr\IeC {\'e}ation des intervalles/classes}{9}
+\contentsline {subsubsection}{Remplacement de chaque valeur par la borne sup\IeC {\'e}rieur de l'intervalle au quel elle appartient}{9}
+\contentsline {subsection}{\numberline {1.4.3}R\IeC {\'e}sultat}{10}
+\contentsline {section}{\numberline {1.5}Normalisation}{11}
+\contentsline {subsection}{\numberline {1.5.1}But}{11}
+\contentsline {subsection}{\numberline {1.5.2}M\IeC {\'e}thode}{11}
+\contentsline {subsection}{\numberline {1.5.3}r\IeC {\'e}sultat}{11}
+\contentsline {section}{\numberline {1.6}Description du Data Set et de ses attributs}{12}
+\contentsline {subsection}{\numberline {1.6.1}Attribut 1 : duration }{14}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{14}
+\contentsline {subsubsection}{BarChart}{14}
+\contentsline {subsubsection}{discussion}{14}
+\contentsline {subsection}{\numberline {1.6.2}Attribut 2 : wage-increase-first-year }{15}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{15}
+\contentsline {subsubsection}{BarChart}{15}
+\contentsline {subsubsection}{discussion}{15}
+\contentsline {subsection}{\numberline {1.6.3}Attribut 3 : wage-increase-second-year }{16}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{16}
+\contentsline {subsubsection}{BarChart}{16}
+\contentsline {subsubsection}{discussion}{16}
+\contentsline {subsection}{\numberline {1.6.4}Attribut 4 : wage-increase-third-year }{17}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{17}
+\contentsline {subsubsection}{BarChart}{17}
+\contentsline {subsubsection}{discussion}{17}
+\contentsline {subsection}{\numberline {1.6.5}Attribut 5 : cost-of-living-adjustment }{18}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{18}
+\contentsline {subsubsection}{BarChart}{18}
+\contentsline {subsubsection}{discussion}{18}
+\contentsline {subsection}{\numberline {1.6.6}Attribut 6 : working-hours }{19}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{19}
+\contentsline {subsubsection}{BarChart}{19}
+\contentsline {subsubsection}{discussion}{19}
+\contentsline {subsection}{\numberline {1.6.7}Attribut 7 : pension }{20}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{20}
+\contentsline {subsubsection}{BarChart}{20}
+\contentsline {subsubsection}{discussion}{20}
+\contentsline {subsection}{\numberline {1.6.8}Attribut 8 : standby-pay }{21}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{21}
+\contentsline {subsubsection}{BarChart}{21}
+\contentsline {subsubsection}{discussion}{21}
+\contentsline {subsection}{\numberline {1.6.9}Attribut 9 : shift-differential }{22}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{22}
+\contentsline {subsubsection}{BarChart}{22}
+\contentsline {subsubsection}{discussion}{22}
+\contentsline {subsection}{\numberline {1.6.10}Attribut 10 : education-allowance}{23}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{23}
+\contentsline {subsubsection}{BarChart}{23}
+\contentsline {subsubsection}{discussion}{23}
+\contentsline {subsection}{\numberline {1.6.11}Attribut 11 : statutory-holidays}{24}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{24}
+\contentsline {subsubsection}{BarChart}{24}
+\contentsline {subsection}{\numberline {1.6.12}Attribut 12 : vacation}{25}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{25}
+\contentsline {subsubsection}{BarChart}{25}
+\contentsline {subsubsection}{discussion}{25}
+\contentsline {subsection}{\numberline {1.6.13}Attribut 13 : longterm-disability-assistance }{26}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{26}
+\contentsline {subsubsection}{BarChart}{26}
+\contentsline {subsubsection}{discussion}{26}
+\contentsline {subsection}{\numberline {1.6.14}Attribut 14 : contribution-to-dental-plan }{27}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{27}
+\contentsline {subsubsection}{BarChart}{27}
+\contentsline {subsubsection}{discussion}{27}
+\contentsline {subsection}{\numberline {1.6.15}Attribut 15 : bereavement-assistance }{28}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{28}
+\contentsline {subsubsection}{BarChart}{28}
+\contentsline {subsubsection}{discussion}{28}
+\contentsline {subsection}{\numberline {1.6.16}Attribut 16 : contribution-to-health-plan }{29}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{29}
+\contentsline {subsubsection}{BarChart}{29}
+\contentsline {subsubsection}{discussion}{29}
+\contentsline {subsection}{\numberline {1.6.17}La Class }{30}
+\contentsline {subsubsection}{Caract\IeC {\'e}ristiques}{30}
+\contentsline {subsubsection}{BarChart}{30}
+\contentsline {section}{\numberline {1.7}Conclusion g\IeC {\'e}n\IeC {\'e}rale}{31}

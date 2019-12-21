@@ -1,0 +1,11 @@
+\contentsline {chapter}{\numberline {1}G\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{2}
+\contentsline {chapter}{\numberline {2}Apriori}{3}
+\contentsline {section}{\numberline {2.1}Concepts de base pour apriori}{3}
+\contentsline {section}{\numberline {2.2}Principe de fonctionnement}{4}
+\contentsline {section}{\numberline {2.3}Pseudo-code}{5}
+\contentsline {section}{\numberline {2.4}D\IeC {\'e}roulement sur un exemple}{5}
+\contentsline {chapter}{\numberline {3}FP-Growth}{7}
+\contentsline {section}{\numberline {3.1}Concepts de base pour FP-Growth}{7}
+\contentsline {section}{\numberline {3.2}Principe de fonctionnement}{8}
+\contentsline {section}{\numberline {3.3}Pseudo-code}{9}
+\contentsline {section}{\numberline {3.4}D\IeC {\'e}roulement sur un exemple}{11}

@@ -1,0 +1,391 @@
+\documentclass[12pt,a4paper,oneside]{book}
+
+	\makeatletter
+	\newcommand\thefontsize[1]{{}}
+	\makeatother
+	\usepackage[utf8]{inputenc}
+	\usepackage{enumitem}
+	\usepackage{varwidth}
+	\usepackage{graphicx}
+	\usepackage{caption}
+	
+\usepackage[top=2.5cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[titletoc,title]{appendix}
+\usepackage[linewidth=1pt]{mdframed}
+\usepackage{framed}
+\usepackage{listings}
+\usepackage{smartdiagram}
+\usepackage{smartdiagram}
+\usepackage{varwidth}
+\usepackage{amsmath}
+
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usesmartdiagramlibrary{additions}
+\lstdefinestyle{customc}{
+	belowcaptionskip=1\baselineskip,
+	breaklines=true,
+	frame=L,
+	xleftmargin=\parindent,
+	language=C,
+	showstringspaces=false,
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	stringstyle=\color{orange},
+}
+
+
+\lstset{escapechar=@,style=customc}
+
+\lstset{
+	literate=%
+	{à}{{\'a}}1
+	{í}{{\'i}}1
+	{é}{{\'e}}1
+	{è}{{\`e}}1
+	{ý}{{\'y}}1
+	{ú}{{\'u}}1
+	{ó}{{\'o}}1
+	{ě}{{\v{e}}}1
+	{š}{{\v{s}}}1
+	{č}{{\v{c}}}1
+	{ř}{{\v{r}}}1
+	{ž}{{\v{z}}}1
+	{ď}{{\v{d}}}1
+	{ť}{{\v{t}}}1
+	{ň}{{\v{n}}}1
+	{ů}{{\r{u}}}1
+	{Á}{{\'A}}1
+	{Í}{{\'I}}1
+	{É}{{\'E}}1
+	{Ý}{{\'Y}}1
+	{Ú}{{\'U}}1
+	{Ó}{{\'O}}1
+	{Ě}{{\v{E}}}1
+	{Š}{{\v{S}}}1
+	{Č}{{\v{C}}}1
+	{Ř}{{\v{R}}}1
+	{Ž}{{\v{Z}}}1
+	{Ď}{{\v{D}}}1
+	{Ť}{{\v{T}}}1
+	{Ň}{{\v{N}}}1
+	{Ů}{{\r{U}}}1
+}
+\usepackage{booktabs,makecell,tabularx}
+
+\renewcommand\theadfont{\small}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\usepackage{siunitx}
+\usepackage{adjustbox}
+\usepackage{array,booktabs}
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+
+%\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{algorithm}% http://ctan.org/pkg/algorithms
+\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usesmartdiagramlibrary{additions}
+\lstdefinestyle{customc}{
+	belowcaptionskip=1\baselineskip,
+	breaklines=true,
+	frame=L,
+	xleftmargin=\parindent,
+	language=C,
+	showstringspaces=false,
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	stringstyle=\color{orange},
+}
+
+
+\usepackage{amsmath}
+\begin{document}
+	
+		\def\reportnumber{}
+		\def\reporttitle{Algorithme Apriori et PF-growth}
+		\input{front_page}
+		
+		
+		\sffamily
+		
+		\setcounter{tocdepth}{3}
+		\tableofcontents
+		\newpage
+
+\chapter{Généralités}
+\section*{Concepts généraux pour la détection de motifs fréquents}
+Quelques notion relatives à la détection de motifs fréquents doivent préalablement etre définis: 
+
+\subsection*{un itemset}
+un item set (ensemble d'items) est un ensemble comportant des items ou des éléments qui se produisent ensemble .
+par exemple : un itemset de transactions T=(T1={lait,café},T2={yaourt ,crème glacée},T3={couche bébé}....)
+\subsection*{le support}
+supp (X) d'un jeu d'éléments X est le rapport entre les transactions dans lesquelles un jeu d'éléments apparaît et le nombre total de transactions.
+\subsection*{frequent itemset}
+Un ensemble d'éléments fréquent est un ensemble d'éléments dont le support est supérieure à une prise en charge minimale spécifiée par l'utilisateur (notée Lk, où k est la taille de l'ensemble d'éléments)
+
+
+\chapter{Apriori}
+
+A priori
+est un algorithme fondamental proposé par R. Agrawal et R. Srikant en 1994 pour
+d’éléments fréquents pour les règles d’association booléennes [AS94b]. 
+Le nom de l'algorithme
+est basé sur le fait que l'algorithme utilise
+connaissance préalable
+des éléments fréquents
+comme nous le verrons plus tard.
+c'est un algorithme facile à comprendre et très utilisé .
+
+\section{Concepts de base pour apriori}
+Tout d'abord avant de plonger directement dans le principe de fonctionnement globale de l'algorithme on a à définir quel que notion :
+
+\subsection*{candidate itemset}     
+Un groupe d'éléments candidat est un groupe d'éléments potentiellement fréquent (noté Ck, où k est la taille du groupe d'éléments)
+\subsection*{Apriori propriété }
+chaque subset (sous-ensemble d'item) d'un fréquent itemset doit être fréquent (condition du support minimale vérifié).
+\subsection*{Opération JOIN (jointure)}
+Pour trouver le $L_{k}$ (frequent itemset de items), on utilise  un ensemble de candidate itemset qui sont générés grâce à la jointure de $L_{k-1}$ avec $L_{k-1}$ (produit cartésien).
+
+\newpage
+
+\section{Principe de fonctionnement}
+Apriori emploie un approche itérative  tel que chaque k-itemsets est utilisé pour explorer les (k+1)-itemsets .
+
+les differentes étapes :
+
+\begin{enumerate}
+	\item Exploration de la base de données pour avoir le support de chaque 1-itemset (ensemble d'un seul item).
+	\item Comparer le support(fréquence) avec le\textbf{ min\_supp} .
+	\item  Supprimer les 1-itemsets ayant un support inférieur au \textbf{ min\_supp} génerer alors $L1$.
+	\item Faire une jointure de $L_{k-1}$ avec $L_{k-1}$  pour générer les ensembles de candidate k-itemsets.
+	\item Verifier la propriété APRIORI  pour élaguer les k-itemsets qui ne sont pas fréquents.
+	\item Exploration de la base de données pour avoir le support de chaque candidate k-itemset vérifiant la propriété apriori.
+	\item Comparer le support de chaque candidate k-itemset avec \textbf{ min\_supp}
+	\item Garder que l'ensemble des k-itemsets vérifiant la condition de  \textbf{ min\_supp} et on aura ainsi $L_{k}$
+	\item si $L_{k}$ est vide alors pour chaque frequent itemset 1 générer les subsets non vide de 1, et pour chaque s subsets non vide de 1, ecrire la regle "s implique(1-s)" si la confidence C de la règle "s implique 1-s" satisfait le \textbf{support min de confiance }
+	\item sinon aller à 4
+\end{enumerate}
+
+
+\newpage
+
+\section{Pseudo-code}
+
+
+
+\begin{algorithm}
+	\DontPrintSemicolon
+	\KwIn{D,base de données de transations ,support minimum}
+	\KwOut{L, itemset fréquent dans D}
+	L1= find frequent 1-itemsets(D);
+	
+	\For{$k \gets 2; L_{k-1} != \emptyset;k++$}{
+		$C_{k} \gets apriori_gen(L_{k-1})$\;
+		
+		\For {$transaction$ $t$ $ \in D$}{
+			
+			scan D for counts\\
+			% The "l" before the If makes it so it does not expand to a second line
+			$C_{t}$=subset($C_{k}$,t); génerer les subsets de t qui sont candidats
+			
+			
+			\For {candidate $c$ $\in$ $C_{t}$}
+			
+			c.count++;
+			
+			$L_{k}$={ $c \in C_{k}$ , c.count$>$support minimum}
+			
+			
+		}
+		
+	}
+	\Return{$L= \bigcup\limits_{k} L_{k}$}\;
+	\caption{{\sc APRIORI}}
+	\label{algo:duplicate2}
+\end{algorithm}
+
+\section{Déroulement sur un exemple}
+Nous prenons comme exemple applicatif les données de transaction d'un entreprise.\\
+Nous y appliquons l'algorithme apriori pour retrouver les motifs fréquents, comme suit:
+
+\begin{center}
+	\includegraphics[width=1\textwidth]{image/dm1.PNG}%
+\end{center}
+\begin{center}
+	\includegraphics[width=1\textwidth]{image/dm2.PNG}%
+\end{center}
+\begin{center}
+	\includegraphics[width=1\textwidth]{image/dm3.PNG}%
+	\captionof{figure}{Déroulement de l'algorithme Apriori sur un exemple.}\label{labelname}%
+\end{center}
+
+
+
+
+\chapter{FP-Growth}
+
+FP-Growth est un algorithme proposé par Han en 2000,c'est une méthode efficace et évolutive pour l'exploitation minière. 
+Utilisation d'une structure d'arborescence de préfixes étendue pour le stockage d'informations compressées et cruciales sur les modèles fréquents nommés arborescence de modèles fréquents (FP-tree).
+
+\section{Concepts de base pour FP-Growth}
+Tout d'abord avant de plonger directement dans le principe de fonctionnement globale de l'algorithme on a à définir quel que notion :
+
+\subsection*{Tree (Arbre)}
+Un arbre est une structure constituée de nœuds, qui peuvent avoir des enfants (qui sont des nœuds à leur tour).
+
+Dans cet algorithme nos noeuds sont des paires (Item:freq)
+
+Deux types de nœuds ont un statut particulier : les nœuds qui n'ont aucun enfant, qu'on appelle des feuilles, et un nœud qui n'est l'enfant d'aucun autre nœud, qu'on appelle la racine, dans notre FP-Tree c'est la racine null.
+
+\subsection*{Path (Chemin)}
+C'est une suite de nœuds allant de la racine vers une feuille, pour cet algorithme il s'agit d'une suit d'Items constituant une transaction, ces Items sont ordonné des plus fréquents aux moins fréquents.
+
+\newpage 
+   
+\section{Principe de fonctionnement}
+Les différentes étapes :
+
+\begin{enumerate}
+\item Exploration de la base de données pour avoir le support de chaque 1-itemset (ensemble d'un seul item).
+\item Comparer le support(fréquence) avec le\textbf{ min\_supp} .
+\item  Supprimer les 1-itemsets ayant un support inférieur au \textbf{ min\_supp} , et ordonner les autres Items dans l'ordre décroissant de nombre de support, générer alors $L$.
+\item Initialiser notre $FB_{Tree}$ a $null$
+\item Ordonner les Item de chaque transaction selon l'ordre obtenu dans $L$
+\item Construction de $FB_{Tree}$ de manière itérative:
+
+ Pour chaque Transaction insérer les items la formant dans le $FB_{Tree}$
+
+tel que soit on ajoute un nœuds (si celui si n'existe pas), soit on incrémente la fréquence du nœuds (dans le cas contraire).
+
+\item Pour chaque Item de $L$ toujours dans l'ordre décroissant de fréquence et en utilisant une stratégie de profondeur d'abord:
+
+On détermine l'arbre de cet Item (tous les chemins allant de la racine $\{\}$ a cet Item)
+
+\item si l'on trouve un seul chemin P constitué d'un ensemble d'Items, alors on génère toutes les combinaisons  $\beta$ de ces Items 
+ 
+\item On récupère les combinaison $\beta$ ayant un support $\geq$ \textbf{ min\_supp} que l'on ajoute a notre liste de motifs fréquents $\alpha \cup \beta$
+
+\item Sinon (plusieurs chemins) générer les motifs de support $\geq$ \textbf{ min\_supp}
+
+\item Construire la base de motif conditionnelle à partir de $\beta$  
+
+\item une fois toutes les combinaisons récupéré, on fait un appel récursif de FP-Growth avec la nouvelle liste $\beta$ (retour à 8)
+\end{enumerate}
+
+
+\newpage
+
+\section{Pseudo-code}
+
+
+
+\begin{algorithm}
+\DontPrintSemicolon
+\KwIn{D:base de données de transations ,$Supp_{min}$ :support minimum }
+\KwOut{L: itemset fréquent dans D}
+
+L= find frequent 1-itemsets(D);
+
+//Create the root of an FP-tree, and label it as “null.”
+
+$FP_{tree}$ = $\{null\}$
+
+\ForEach{Trans in D}
+{
+	Sort Items of (Trans) according to the order of (L)\\
+	\ForEach{Item in Trans}{
+		//$FP_{tree}$ is the first element\\
+		//P is the remaining list\\
+		Insert\_tree([$FP_{tree}|$P], Item)
+	}
+}
+
+L = FP-growth-Const(${FP}_{tree}, null$)
+
+\Return{$L$}\;
+\caption{\sc FP-Growth}
+\end{algorithm}
+
+
+ 
+
+\begin{algorithm}
+	\SetAlgoLined
+	\DontPrintSemicolon
+	\textbf{Procedure : Insert\_tree([p|P], Item)}\;
+	
+	\If{Item.has\_a\_child(N) \textbf{And} N.item-name = $p$.item-name}
+	{
+		N.freq ++
+	}
+	\Else{
+		Create\_Node(N)\\
+		N.freq = 1\\
+		Link\_To\_Parent(Item, N)
+	}
+	\If{P.empty() == False}
+	{insert\_tree(P, N)}
+
+	\Return $P$\;
+	\caption{\sc Procedure Insert\_tree }
+\end{algorithm}
+
+\newpage
+ 
+\begin{algorithm}
+	\DontPrintSemicolon
+	\textbf{procedure FP\_growth-Const(Tree, $\alpha$)}
+	
+\If{Tree contains a single path P}
+{
+	\ForEach{combination $\beta$ of the nodes in the path P}{
+		generate pattern $\beta \cup \alpha$  with support\_count = minimum support count of nodes in $\beta$;
+	}
+}	
+\Else{ 
+	\ForEach{ $a_{i}$ in Q /*the header of Tree*/} 
+	{
+		generate pattern $\beta = a_{i} \cup \alpha$ with support\_count = $a_{i}$.support\_count
+
+		construct $\beta$ conditional pattern base and then $\beta$  conditional FP\_tree $Tree_{\beta}$
+
+		\If{$Tree_{\beta}$ = $\emptyset$} {
+			FP\_growth($Tree_{\beta}$ , $\beta$) 
+		}
+		set(Q) is the set of patterns generated
+		
+	}
+}
+\Return{$\alpha$}\;
+\caption{\sc Procedure FP-Growth-Const}
+\end{algorithm}
+
+\newpage
+
+
+\section{Déroulement sur un exemple}
+Nous prenons comme exemple applicatif les données de transaction d'un entreprise.\\
+Nous y appliquons l'algorithme FP-Growth pour retrouver les motifs fréquents, comme suit:
+
+\iffalse
+\begin{center}
+	\includegraphics[width=1\textwidth]{image/dm1.PNG}%
+\end{center}
+\begin{center}
+	\includegraphics[width=1\textwidth]{image/dm2.PNG}%
+\end{center}
+\begin{center}
+	\includegraphics[width=1\textwidth]{image/dm3.PNG}%
+	\captionof{figure}{Déroulement de l'algorithme Apriori sur un exemple.}\label{labelname}%
+\end{center}
+
+\fi
+
+\end{document}

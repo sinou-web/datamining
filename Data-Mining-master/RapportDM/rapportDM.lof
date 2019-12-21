@@ -1,0 +1,40 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Ex\IeC {\'e}cution d'Apriori avec Supp\_Min = 3\relax }}{13}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Ex\IeC {\'e}cution de FP-Growth avec Supp\_Min = 3 \relax }}{13}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Ex\IeC {\'e}cution d'Apriori avec Supp\_Min = 4\relax }}{14}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Ex\IeC {\'e}cution de FP-Growth avec Supp\_Min = 4 \relax }}{14}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Ex\IeC {\'e}cution d'Apriori avec Supp\_Min = 5\relax }}{14}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Ex\IeC {\'e}cution de FP-Growth avec Supp\_Min = 5 \relax }}{14}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Variation du temps d'ex\IeC {\'e}cution selon supp\_min\relax }}{15}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Variations du temps en fonction de K\relax }}{20}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Variations de la pr\IeC {\'e}cision en fonction de K \relax }}{20}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Variations du temps en fonction de K\relax }}{20}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Variations de la pr\IeC {\'e}cision en fonction de K \relax }}{20}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Variations du temps en fonction de K\relax }}{21}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Variations de la pr\IeC {\'e}cision en fonction de K \relax }}{21}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Variations du temps en fonction de K\relax }}{21}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Variations de la pr\IeC {\'e}cision en fonction de K \relax }}{21}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Variations du temps en fonction de K\relax }}{22}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Variations de la pr\IeC {\'e}cision en fonction de K \relax }}{22}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Variations du temps en fonction de K\relax }}{22}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Variations de la pr\IeC {\'e}cision en fonction de K \relax }}{22}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Variations du temps en fonction de K\relax }}{23}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Variations de la pr\IeC {\'e}cision en fonction de K \relax }}{23}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Variations du temps en fonction de K\relax }}{23}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Variations de la pr\IeC {\'e}cision en fonction de K \relax }}{23}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Variations du temps en fonction de K\relax }}{24}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Variations de la pr\IeC {\'e}cision en fonction de K \relax }}{24}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Variations du temps en fonction de K\relax }}{24}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Variations de la pr\IeC {\'e}cision en fonction de K \relax }}{24}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Pr\IeC {\'e}cision pour K=20 pour dataset unbalanced\relax }}{25}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Pr\IeC {\'e}cision pour k=13 pour dataset unbalanced \relax }}{25}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Pr\IeC {\'e}cision pour k=7 pour dataset unbalanced \relax }}{25}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Ex\IeC {\'e}cution de DBSCAN sur le DataSet LABOR\relax }}{31}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Ex\IeC {\'e}cution de DBSCAN sur le DataSet IRIS\relax }}{32}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Ex\IeC {\'e}cution de DBSCAN sur le DataSet GLASS\relax }}{33}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Ex\IeC {\'e}cution de DBSCAN sur le DataSet VOTE\relax }}{34}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Ex\IeC {\'e}cution de DBSCAN sur le DataSet UNBALANCED\relax }}{35}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Variation du temps d'ex\IeC {\'e}cution de DBSCAN selon la taille du DataSet\relax }}{37}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Nettoyage et traitement du dataset avant clustering\relax }}{43}

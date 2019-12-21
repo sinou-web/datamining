@@ -1,0 +1,47 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Interface de l'application affichant le Data Set [labor.arff] .\relax }}{5}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Dictionnaire par Classe regroupant les instances dont la valeur de l'attribut DURATION existe, Data Set [labor.arff] .\relax }}{6}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Dictionnaire par Classe regroupant les instances dont la valeur de l'attribut WAGE INCREASED EACH YEAR existe, Data Set [labor.arff].\relax }}{6}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Dictionnaire pour la classe bad regroupant les instances dont la valeur de l'attribut contribution-to-dental-plan existe, Data Set [labor.arff].\relax }}{7}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Dictionnaire pour la classe good regroupant les instances dont la valeur de l'attribut contribution-to-dental-plan existe, Data Set [labor.arff].\relax }}{7}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Data Set [labor.arff] avant traitement des valeurs manquantes.\relax }}{8}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Data Set [labor.arff] apr\IeC {\`e}s traitement des valeurs manquantes.\relax }}{8}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Data Set [labor.arff] avant discr\IeC {\'e}tisation.\relax }}{10}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Data Set [labor.arff] apr\IeC {\`e}s discr\IeC {\'e}tisation.\relax }}{10}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Data Set [labor.arff] avant normalisation.\relax }}{11}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Data Set [labor.arff] apr\IeC {\`e}s normalisation.\relax }}{12}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Boites \IeC {\`a} moustaches du Data Set [labor.arff] brute.\relax }}{13}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Boites \IeC {\`a} moustaches du Data Set [labor.arff] apr\IeC {\`e}s normalisation.\relax }}{13}
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Attribut 1 : duration du Data Set [labor.arff] .\relax }}{14}
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Histogramme de duration du Data Set [labor.arff] .\relax }}{14}
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Attribut 2 : wage-increase-first-year du Data Set [labor.arff] .\relax }}{15}
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Histogramme de wage-increase-first-year du Data Set [labor.arff] .\relax }}{15}
+\contentsline {figure}{\numberline {1.18}{\ignorespaces Attribut 3 : wage-increase-second-year du Data Set [labor.arff] .\relax }}{16}
+\contentsline {figure}{\numberline {1.19}{\ignorespaces Histogramme de wage-increase-second-year du Data Set [labor.arff] .\relax }}{16}
+\contentsline {figure}{\numberline {1.20}{\ignorespaces Attribut 4 : wage-increase-third-year du Data Set [labor.arff] .\relax }}{17}
+\contentsline {figure}{\numberline {1.21}{\ignorespaces Histogramme de wage-increase-third-year du Data Set [labor.arff] .\relax }}{17}
+\contentsline {figure}{\numberline {1.22}{\ignorespaces Attribut 5 : cost-of-living-adjustment du Data Set [labor.arff] .\relax }}{18}
+\contentsline {figure}{\numberline {1.23}{\ignorespaces Histogramme de cost-of-living-adjustment du Data Set [labor.arff] .\relax }}{18}
+\contentsline {figure}{\numberline {1.24}{\ignorespaces Attribut 6 : working-hours du Data Set [labor.arff] .\relax }}{19}
+\contentsline {figure}{\numberline {1.25}{\ignorespaces Histogramme de working-hours du Data Set [labor.arff] .\relax }}{19}
+\contentsline {figure}{\numberline {1.26}{\ignorespaces Attribut 7 : pension du Data Set [labor.arff] .\relax }}{20}
+\contentsline {figure}{\numberline {1.27}{\ignorespaces Histogramme de pension du Data Set [labor.arff] .\relax }}{20}
+\contentsline {figure}{\numberline {1.28}{\ignorespaces Attribut 8 : standby-pay du Data Set [labor.arff] .\relax }}{21}
+\contentsline {figure}{\numberline {1.29}{\ignorespaces Histogramme de standby-pay du Data Set [labor.arff] .\relax }}{21}
+\contentsline {figure}{\numberline {1.30}{\ignorespaces Attribut 9 : shift-differential du Data Set [labor.arff] .\relax }}{22}
+\contentsline {figure}{\numberline {1.31}{\ignorespaces Histogramme de shift-differential du Data Set [labor.arff] .\relax }}{22}
+\contentsline {figure}{\numberline {1.32}{\ignorespaces Attribut 10 : education-allowance du Data Set [labor.arff] .\relax }}{23}
+\contentsline {figure}{\numberline {1.33}{\ignorespaces Histogramme de education-allowance du Data Set [labor.arff] .\relax }}{23}
+\contentsline {figure}{\numberline {1.34}{\ignorespaces Attribut 11 : statutory-holidays du Data Set [labor.arff] .\relax }}{24}
+\contentsline {figure}{\numberline {1.35}{\ignorespaces Histogramme de statutory-holidays du Data Set [labor.arff] .\relax }}{24}
+\contentsline {figure}{\numberline {1.36}{\ignorespaces Attribut 12 : vacation du Data Set [labor.arff] .\relax }}{25}
+\contentsline {figure}{\numberline {1.37}{\ignorespaces Histogramme de vacation du Data Set [labor.arff] .\relax }}{25}
+\contentsline {figure}{\numberline {1.38}{\ignorespaces Attribut 13 : longterm-disability-assistance du Data Set [labor.arff] .\relax }}{26}
+\contentsline {figure}{\numberline {1.39}{\ignorespaces Histogramme de longterm-disability-assistance du Data Set [labor.arff] .\relax }}{26}
+\contentsline {figure}{\numberline {1.40}{\ignorespaces Attribut 14 : contribution-to-dental-plan du Data Set [labor.arff] .\relax }}{27}
+\contentsline {figure}{\numberline {1.41}{\ignorespaces Histogramme de contribution-to-dental-plan du Data Set [labor.arff] .\relax }}{27}
+\contentsline {figure}{\numberline {1.42}{\ignorespaces Attribut 15 : bereavement-assistance du Data Set [labor.arff] .\relax }}{28}
+\contentsline {figure}{\numberline {1.43}{\ignorespaces Histogramme de bereavement-assistance du Data Set [labor.arff] .\relax }}{28}
+\contentsline {figure}{\numberline {1.44}{\ignorespaces Attribut 16 : contribution-to-health-plan du Data Set [labor.arff] .\relax }}{29}
+\contentsline {figure}{\numberline {1.45}{\ignorespaces Histogramme de contribution-to-health-plan du Data Set [labor.arff] .\relax }}{29}
+\contentsline {figure}{\numberline {1.46}{\ignorespaces Histogramme de class du Data Set [labor.arff] .\relax }}{30}
